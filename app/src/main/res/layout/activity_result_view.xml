@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultView">
+
+    <ImageView
+        android:id="@+id/bmiicon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bmiicon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="160dp"
+        android:layout_marginTop="60dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/averagetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Average : 22.0"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/bmiicon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="120dp"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:scaleY="5"
+        android:max="100"
+        android:progress="60"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="75dp"/>
+
+    <TextView
+        android:id="@+id/zerotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintLeft_toLeftOf="@id/progressBar"/>
+
+    <TextView
+        android:id="@+id/hundtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintRight_toRightOf="@id/progressBar"/>
+
+    <TextView
+        android:id="@+id/bmiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="B M I       : "
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="60dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/BMIResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        app:layout_constraintTop_toTopOf="@id/bmiText"
+        app:layout_constraintLeft_toRightOf="@id/bmiText"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your Status : "
+        android:textSize="28sp"
+        app:layout_constraintRight_toRightOf="@id/bmiText"
+        app:layout_constraintTop_toBottomOf="@id/bmiText"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        app:layout_constraintTop_toTopOf="@id/ResultText"
+        app:layout_constraintLeft_toRightOf="@id/ResultText"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/percentagetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percentage : "
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/ResultText"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/ResultText"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/percentageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        app:layout_constraintTop_toTopOf="@id/percentagetext"
+        app:layout_constraintLeft_toRightOf="@id/percentagetext"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/hufsimage2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/hufsmark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="50dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
